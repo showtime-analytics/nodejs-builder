@@ -1,1 +1,1 @@
-export IMAGE_NAME="java-jre"
+export IMAGE_NAME="nodejs-builder"

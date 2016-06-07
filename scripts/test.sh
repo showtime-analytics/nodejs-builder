@@ -10,4 +10,4 @@ PROJECT_NAME=$(basename `pwd`)
 : ${REPOSITORY:=${PROJECT_NAME}}
 : ${VERSION:=`cat version`}
 
-(set -x; docker run -i --rm ${REPOSITORY}:${VERSION} 'node --version && npm --version')
+(set -x; docker run -i --rm ${REPOSITORY}:${VERSION} bash -c "node --version && npm --version")

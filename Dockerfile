@@ -34,3 +34,6 @@ RUN apk add --no-cache curl make gcc g++ python linux-headers paxctl libgcc libs
   rm -rf /etc/ssl /node-${VERSION}.tar.gz /SHASUMS256.txt.asc /node-${VERSION} ${RM_DIRS} \
     /usr/share/man /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp /root/.gnupg \
     /usr/lib/node_modules/npm/man /usr/lib/node_modules/npm/doc /usr/lib/node_modules/npm/html
+
+WORKDIR /opt/src
+ENTRYPOINT ["/bin/bash", "-c"]
